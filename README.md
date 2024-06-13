@@ -1,11 +1,13 @@
 # Sclask
 Sclask is a learning project created to explore web scraping technology using Scrapy. The project demonstrates a scraper capable of doing auth on the board website. It extracts the latest number from the site and awards points based on user-entered values. Once 100 points are accumulated, the scraper automatically stops its activities.
 
-## Features
-- Automated login/registration on the "board" website using Scrapy.
-- Extraction and parsing of the latest number from the website.
-- Awarding points based on user-entered values.
-- Automatic cessation of scraper activities upon reaching 100 points.
+## Project Overview 
+
+### Features
+* Automated login/registration on the "board" website using Scrapy.
+*  Extraction and parsing of the latest number from the website.
+*  Awarding points based on user-entered values.
+*  Automatic cessation of scraper activities upon reaching 100 points.
 
 ### Purpose
 This project aims to develop and apply fundamental skills in web scraping using Scrapy. It showcases how Scrapy can automate web-based tasks such as data extraction and executing actions on websites.
