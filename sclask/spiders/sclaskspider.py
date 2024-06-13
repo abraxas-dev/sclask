@@ -32,11 +32,9 @@ class SclaskspiderSpider(scrapy.Spider):
     def start_requests(self):
         if self.username is None and self.password is None:
             self.username, self.password = self.generate_username_and_password()
-            yield FormRequest(url = self.origin_url + "/auth/register", formdata={'username' : self.username, 'password' : self.password}, callback=self.login, dont_filter=True)
-        else:
-            yield self.login()
+        yield from self.login()
 
-    def login(self, response = None):
+    def login(self):
         with open('my_profile.txt', 'a') as f:
             f.write("Username: " + str(self.username) + "; Password : " + str(self.password) + "\n")
         self.output('login', self.username)
