@@ -21,11 +21,11 @@ This project aims to develop and apply fundamental skills in web scraping using 
 ### Usage
 1. Clone the repository
 ```
-git clone https://github.com/abraxas-dev/board.git
+git clone https://github.com/abraxas-dev/sclask.git
 ```
 2. Navigate to the project directory
 ```
-cd ./board
+cd ./sclask
 ```
 3. Create and activate a virtual environment
 ```
