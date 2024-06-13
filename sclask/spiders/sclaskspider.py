@@ -11,7 +11,9 @@ class SclaskspiderSpider(scrapy.Spider):
     name = "sclaskspider"
     username = None
     password = None
-    origin_url = "http://127.0.0.1:8000"
+    url = "http://127.0.0.1"
+    port = "8000"
+    origin_url = url + ":" + str(port)
 
     def __init__(self, username=None, password=None, *args, **kwargs):
         super(SclaskspiderSpider, self).__init__(*args, **kwargs)
@@ -22,6 +24,9 @@ class SclaskspiderSpider(scrapy.Spider):
                 if password_input.strip():
                     self.username = username_input
                     self.password = password_input
+        port_input = input("Enter your port, otherwise the default 8000 will be taken\n")
+        if port_input.strip():
+            self.origin_url = self.url + ":" + str(port_input)
 
 
     def start_requests(self):
