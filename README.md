@@ -34,7 +34,7 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 4. Install scrapy
 ```
-sudo pip3 install scrapy
+sudo pip install scrapy # if pip doesn't work, then try pip3
 ```
 5. Running the spider
 ```
